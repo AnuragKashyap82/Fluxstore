@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 26,
                 ),
                 Row(
@@ -40,28 +40,161 @@ class HomeScreen extends StatelessWidget {
                     ),)
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 26,
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                 Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8.0),
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        CategoryWidgets(color: Color(0xffe6f3f9),path: "assets/logo.png", title: "Men",),
-                        CategoryWidgets(color: Color(0xffe5ecf5),path: "assets/logo.png", title: "Women",),
-                        CategoryWidgets(color: Color(0xffe4f3f6),path: "assets/logo.png", title: "Clothing",),
-                        CategoryWidgets(color: Color(0xffe6eaf0),path: "assets/logo.png", title: "Posters",),
-                        CategoryWidgets(color: Color(0xffe4e8e7),path: "assets/logo.png", title: "Music",),
+                        CategoryWidgets(color: Color(0xffe6f3f9),path: "assets/polo-shirt.png", title: "Men",),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 14.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Container(
+                                height: 52,
+                                width: 52,
+                                decoration: BoxDecoration(
+                                  color: Color(0xffe5ecf5),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Center(
+                                  child: Image.asset(
+                                    "assets/short-dress.png",
+                                    width: 24,
+                                    height: 24,
+                                    color: Color(0xff3866b2),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 6,
+                              ),
+                              Text("Women", style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w600,
+                                  color: colorGrey
+                              ),)
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 14.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Container(
+                                height: 52,
+                                width: 52,
+                                decoration: BoxDecoration(
+                                  color: Color(0xffe4f3f6),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Center(
+                                  child: Image.asset(
+                                    "assets/pants.png",
+                                    width: 24,
+                                    height: 24,
+                                    color: Color(0xff4f9ec7),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 6,
+                              ),
+                              Text("Clothing", style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w600,
+                                  color: colorGrey
+                              ),)
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 14.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Container(
+                                height: 52,
+                                width: 52,
+                                decoration: BoxDecoration(
+                                  color:Color(0xffe6eaf0),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Center(
+                                  child: Image.asset(
+                                    "assets/handbag.png",
+                                    width: 24,
+                                    height: 24,
+                                    color: Color(0xff506587),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 6,
+                              ),
+                              Text("Posters", style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w600,
+                                  color: colorGrey
+                              ),)
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 14.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Container(
+                                height: 52,
+                                width: 52,
+                                decoration: BoxDecoration(
+                                  color:Color(0xffe4e8e7),
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Center(
+                                  child: Image.asset(
+                                    "assets/cap.png",
+                                    width: 24,
+                                    height: 24,
+                                    color: Color(0xff506587),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 6,
+                              ),
+                              Text("Music", style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w600,
+                                  color: colorGrey
+                              ),)
+                            ],
+                          ),
+                        ),
+
                       ],
                     ),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
 
@@ -81,7 +214,7 @@ class HomeScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 36,
                               ),
                               Row(
@@ -95,7 +228,7 @@ class HomeScreen extends StatelessWidget {
                                      color: colorGrey.withOpacity(0.4)
                                    ),
                                  ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 16,
                                   ),
                                   Text("SUMMER COLLECTION 2019", style: TextStyle(
@@ -106,10 +239,10 @@ class HomeScreen extends StatelessWidget {
                                   ),)
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 48,
                               ),
-                              Expanded(
+                              const Expanded(
                                 child: Text("Blue Summer\nare already in\nstore", style: TextStyle(
                                     fontSize: 20,
                                     letterSpacing: 0,
@@ -127,31 +260,31 @@ class HomeScreen extends StatelessWidget {
                                     Container(
                                       width: 30,
                                       height: 2,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: colorBlack,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 3,
                                     ),
                                     Container(
                                       width: 30,
                                       height: 2,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.grey,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 3,
                                     ),
                                     Container(
                                       width: 30,
                                       height: 2,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.grey,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       width: 3,
                                     ),
                                   ],
@@ -170,7 +303,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
 
@@ -191,7 +324,7 @@ class HomeScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 42,
                               ),
                               Text("For Gen", style: TextStyle(
@@ -200,7 +333,7 @@ class HomeScreen extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                   color: colorGrey.withOpacity(0.8)
                               ),),
-                              SizedBox(
+                              const SizedBox(
                                 height: 0,
                               ),
                               Expanded(
@@ -224,7 +357,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
 
@@ -248,7 +381,7 @@ class HomeScreen extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
                                   SizedBox(width: MediaQuery.of(context).size.width * 0.5,),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 60,
                                   ),
                                   Padding(
@@ -260,7 +393,7 @@ class HomeScreen extends StatelessWidget {
                                         color: colorGrey.withOpacity(0.8)
                                     ),),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4,
                                   ),
                                   Expanded(
@@ -304,7 +437,7 @@ class HomeScreen extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   SizedBox(width: MediaQuery.of(context).size.width * 0.5,),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 60,
                                   ),
                                   Padding(
@@ -316,7 +449,7 @@ class HomeScreen extends StatelessWidget {
                                         color: colorGrey.withOpacity(0.8)
                                     ),),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 4,
                                   ),
                                   Expanded(
@@ -345,7 +478,7 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
 

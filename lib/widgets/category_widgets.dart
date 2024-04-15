@@ -9,7 +9,8 @@ class CategoryWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return
+      Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +32,7 @@ class CategoryWidgets extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 6,
           ),
           Text(title, style: TextStyle(

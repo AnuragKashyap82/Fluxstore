@@ -1,4 +1,4 @@
-import 'package:flucstore/dashboard.dart';
+import 'package:flucstore/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {

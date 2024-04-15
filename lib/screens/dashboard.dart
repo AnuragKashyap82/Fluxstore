@@ -1,4 +1,4 @@
-import 'package:flucstore/home_screen.dart';
+import 'package:flucstore/screens/home_screen.dart';
 import 'package:flucstore/utils/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
