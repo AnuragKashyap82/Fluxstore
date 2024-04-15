@@ -1,4 +1,5 @@
 import 'package:flucstore/screens/dashboard.dart';
+import 'package:flucstore/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: "MontserratRegular",
       ),
-      home: DashboardScreen(),
+      home: SplashScreen(),
     );
   }
 }
